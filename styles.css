@@ -1,0 +1,315 @@
+/* globals */
+:root{
+  --btn-color: #50a584;
+  --main-text: white;
+  --sub-text: #8c8a8b;
+  --background-1: black;
+  --background-2: transparent;
+  --size-12: .8rem;
+  --size-14: .9rem;
+  --size-16: 1rem;
+  --size-18: 1.1rem;
+  --size-20: 1.3rem;
+  --size-24: 1.5rem;
+  --size-28: 1.8rem;
+  --size-32: 2rem;
+  --size-34: 2.125rem;
+  --size-36: 2.25rem;
+  --size-38: 2.375rem;
+  --size-40: 2.5rem;
+  --size-50: 3.125rem;
+  --size-60: 3.75rem;
+  --size-70: 4.375rem;
+  --size-80: 5rem;
+  --size-100: 6.25rem;
+  --size-150: 9.375rem;
+}
+
+*{
+  box-sizing:border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  margin: 0;
+  background-image: url('assets/album.png');
+  background-repeat:no-repeat;
+  background-position: -200px -700px;
+  background-size: cover;
+  color: white;
+}
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+ul, li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.gap-50{
+  gap: 50px;
+}
+.gap-40{
+  gap:40px;
+}
+
+.gap-30{
+  gap: 30px;
+}
+
+.gap-20{
+  gap: 20px;
+}
+
+.gap-10{
+  gap: 10px;
+}
+
+.btn-1{
+  background-color: var(--btn-color);
+}
+
+.btn-1, .btn-2{
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: var(--size-12);
+}
+.btn-2{
+  border: white solid 1px;
+}
+.play-list, .nav, .nav .hamburger-switch, .nav .social-media-bar ul, .track-list ul, .name,
+ .playing-now-description,
+ .play-list-wrapper, .card-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+.align-center{
+  align-items: center;
+}
+
+.justify-end{
+  justify-content: end;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.width-third{
+  max-width: 33%;
+}
+
+
+.playing-now, 
+.release-panorama, 
+.streaming-buttons ul, 
+.users, 
+.logo, 
+.main, 
+.track-list ul li, 
+.left, .social-media-bar ul, .shares, .button-controls, .footer-1, .footer-2,
+.social-media ul,
+.record{
+  display: flex;
+  flex-direction: row;
+}
+
+/* locals */
+.container{
+  background: rgb(0,0,0);
+background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.9) 65%, rgba(0,0,0, .7) 100%);
+}
+.main{
+  padding-top: 75px;
+}
+
+/* logo section */
+/* playlist section */
+.caption{
+  transform:90deg;
+}
+.play-list{
+  grid-column: 2 / span 6;
+  padding-top: 100px;
+  margin: 0 30px;
+}
+
+/* .button-controls a{
+  font-size: var(--size-24);
+} */
+.streaming-buttons ul li a, .social-media ul li a{
+  font-size: var(--size-18);
+  color: white;
+}
+
+.title h2{
+  font-size: var(--size-50);
+}
+
+.title h3{
+  font-size: var(--size-28);
+}
+.users .img-wrapper img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.users{
+  gap: 20px;
+}
+
+.streaming h2, .track-list h2, .other-releases h2{
+  font-size: var(--size-38);
+    padding: 30px 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+.card{
+  max-width: 140px;
+}
+
+.card-2{
+  max-width: 500px;
+}
+.card-description h4{
+  font-size: 14px;
+  margin-top: 10px;
+
+}
+
+.card-description span{
+  font-size: 12px;
+  margin-top: -8px;
+  font-style: italic;
+}
+.name p{
+  margin: 0;
+  font-weight: bold;
+  font-size: var(--size-12);
+}
+
+.name span{
+  font-size: var(--size-12);
+}
+
+.left{
+  gap: 20px;
+}
+.left p{
+  font-size: var(--size-24);
+}
+
+.left i{
+  font-size: var(--size-28);
+}
+
+.shares{
+  font-size: var(--size-24);
+  gap: 20px;
+}
+
+.shares p{
+  margin: 0;
+}
+
+/* footer section */
+.links ul li a, .legal ul li a{
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.links ul li, .legal ul li{
+  margin: 5px 0;
+}
+
+.footer-1{
+  border-top: white solid 1px;
+  border-bottom: white solid 1px;
+  padding: 30px 0;
+  margin-top: 50px;
+}
+
+.disclaimer{
+  text-align:center;
+  display: flex;
+  flex-direction: row;
+}
+.updates{
+  color: var(--sub-text)
+}
+
+.updates p{
+  font-style: italic;
+  font-size: 14px;
+}
+
+.input-section{
+  background-color:transparent;
+  border-bottom: var(--sub-text) solid 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+.input-section input{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 10px 0;
+  color: var(--sub-text);
+}
+
+.input-section button{
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 24px;
+}
+
+input:focus{
+  outline: none;
+}
+
+/* navigation section */
+
+.hamburger-switch{
+  display: flex;
+  width: 20px;
+  height: 20px;
+  gap: 3px;
+  margin-bottom: 20px;
+}
+
+.line{
+  border:white solid 1px;
+}
+
+.social-media-bar ul li a{
+  color: white;
+  font-size: var(--size-20);
+}
+
+.card-2 p{
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  font-size: 8px;
+}
+
+.footer-2{
+  margin-bottom: var(--size-40);
+}
