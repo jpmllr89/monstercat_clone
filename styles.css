@@ -84,12 +84,13 @@ a{
 .btn-2{
   border: white solid 1px;
 }
-.play-list, .nav, .nav .hamburger-switch, .nav .social-media-bar ul, .track-list ul, .name,
+.play-list, .navVert, .navVert .hamburger-switch, .navVert .social-media-bar ul, .track-list ul, .name,
  .playing-now-description,
  .play-list-wrapper, .card-wrapper{
   display: flex;
   flex-direction: column;
 }
+
 .align-center{
   align-items: center;
 }
@@ -122,7 +123,6 @@ a{
 .social-media ul,
 .record{
   display: flex;
-  flex-direction: row;
 }
 
 /* locals */
@@ -133,7 +133,11 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.9) 65%, rgba(0
 .main{
   padding-top: 75px;
 }
-
+/* Nav-Horizontal */
+.navHorz{
+  visibility: hidden;
+  display: none;
+}
 /* logo section */
 /* playlist section */
 .caption{

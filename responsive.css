@@ -1,0 +1,52 @@
+@media screen and (max-width: 400px) {
+  .playing-now{
+    flex-direction: column;
+  }
+  .record{
+    justify-content: center;
+  }
+  .navVert{
+    visibility: hidden;
+    display: none;
+  }
+  .navHorz{
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .main{
+    flex-direction:column;
+  }
+  .navVert{
+    visibility: hidden;
+  }
+  .navHorz{
+    visibility: visible;
+    display: flex;
+    justify-content: space-around;
+  }
+  .playing-now{
+    flex-direction: column;
+    align-items: center;
+  }
+  .streaming, 
+  .track-list,
+  .other-releases{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .release-panorama{
+    overflow: auto;
+    max-width: 80vw;
+  }
+
+  .track-list ul li{
+    gap: 100px;
+  }
+
+}
