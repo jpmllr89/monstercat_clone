@@ -146,6 +146,11 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.9) 65%, rgba(0
   visibility: hidden;
   display: none;
 }
+
+.navHorz .hamburger-switch{
+  rotate: 90deg;
+  padding-left: 7px;
+}
 /* logo section */
 /* playlist section */
 .caption{
@@ -327,6 +332,19 @@ input:focus{
   border:white solid 1px;
 }
 
+.tilt-1{
+  transform: rotate(45deg);
+}
+
+.tilt-2{
+  transform: rotate(-45deg);
+  translate: -10px;
+}
+
+.hide{
+  visibility: hidden;
+}
+
 .social-media-bar ul li a{
   color: white;
   font-size: var(--size-20);
@@ -357,4 +375,13 @@ input:focus{
 
 .footer-1 ul li a:hover{
   color: var(--btn-color);
+}
+
+/* social-media-navigation */
+.social-media-bar{
+  visibility:hidden;
+}
+
+.active{
+  visibility: visible;
 }

@@ -29,9 +29,16 @@
     flex-direction: column;
   }
 
+  .main > logo{
+    display: none;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
+  .main > .logo{
+    display: none;
+  }
 
   .main{
     flex-direction:column;
@@ -97,6 +104,11 @@
   .main{
     flex-direction:column;
   }
+
+  .main > .logo{
+    display: none;
+  }
+
   .navVert{
     visibility: hidden;
   }
