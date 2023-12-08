@@ -382,6 +382,6 @@ input:focus{
   visibility:hidden;
 }
 
-.active{
+.social-media-bar.active{
   visibility: visible;
 }
