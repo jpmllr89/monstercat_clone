@@ -1,8 +1,17 @@
-const hamburgerSwitch = document.querySelectorAll('.hamburger-switch');
+const hamburgerSwitchVert = document.querySelector('.hamburger-switch.vert');
+const hamburgerSwitchHorz = document.querySelector('.hamburger-switch.horz');
 
-hamburgerSwitch.forEach((x) => x.addEventListener('click', () => {
-  let socialMediaBar = document.querySelector('.social-media-bar');
-  socialMediaBar.classList.toggle('active');
+hamburgerSwitchVert.addEventListener('click', () => {
+  let socialMediaVert = document.querySelector('.social-media-bar.vert');
+  console.log(socialMediaVert);
+  socialMediaVert.classList.toggle('active');
   console.log('clicked');
-}))
+});
+
+hamburgerSwitchHorz.addEventListener('click', () => {
+  let socialMediaHorz = document.querySelector('.social-media-bar.horz');
+  console.log(socialMediaHorz);
+  socialMediaHorz.classList.toggle('active');
+  console.log('clicked');
+});
 

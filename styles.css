@@ -378,10 +378,10 @@ input:focus{
 }
 
 /* social-media-navigation */
-.social-media-bar{
+.social-media-bar.vert, .social-media-bar.horz{
   visibility:hidden;
 }
 
-.social-media-bar.active{
+.social-media-bar.vert.active, .social-media-bar.horz.active{
   visibility: visible;
 }
