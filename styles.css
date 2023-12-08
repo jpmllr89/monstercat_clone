@@ -83,7 +83,15 @@ a{
 }
 .btn-2{
   border: white solid 1px;
+  transition: all .3s ease-in-out;
 }
+
+.btn-2:hover{
+  background-color: var(--btn-color);
+  color: white;
+}
+
+
 .play-list, .navVert, .navVert .hamburger-switch, .navVert .social-media-bar ul, .track-list ul, .name,
  .playing-now-description,
  .play-list-wrapper, .card-wrapper{
@@ -138,6 +146,11 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.9) 65%, rgba(0
   visibility: hidden;
   display: none;
 }
+
+.navHorz .hamburger-switch{
+  rotate: 90deg;
+  padding-left: 7px;
+}
 /* logo section */
 /* playlist section */
 .caption{
@@ -182,9 +195,18 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.9) 65%, rgba(0
 }
 
 
+
+.release-panorama::-webkit-scrollbar{
+  display: none;
+}
 .card{
   max-width: 140px;
+  transition: all .3s ease-in-out;
 }
+
+.card:hover{
+  transform: scale(1.1);
+} 
 
 .card-2{
   max-width: 500px;
@@ -220,6 +242,13 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.9) 65%, rgba(0
 .left i{
   font-size: var(--size-28);
 }
+.left p, .left i, .left .name{
+  transition: all .3s ease-in-out;
+}
+
+.left p:hover, .left i:hover, .left .name:hover{
+  color: var(--btn-color);
+}
 
 .shares{
   font-size: var(--size-24);
@@ -231,6 +260,7 @@ background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(0,0,0,.9) 65%, rgba(0
 }
 
 /* footer section */
+
 .links ul li a, .legal ul li a{
   color: white;
   font-weight: bold;
@@ -302,11 +332,32 @@ input:focus{
   border:white solid 1px;
 }
 
+.tilt-1{
+  transform: rotate(45deg);
+}
+
+.tilt-2{
+  transform: rotate(-45deg);
+  translate: -10px;
+}
+
+.hide{
+  visibility: hidden;
+}
+
 .social-media-bar ul li a{
   color: white;
   font-size: var(--size-20);
 }
 
+.social-media i{
+  transition:all .3s ease-in-out;
+}
+
+.social-media i:hover{
+  color: var(--btn-color);
+  scale: 1.1;
+}
 .card-2 p{
   font-style: italic;
   font-weight: bold;
@@ -316,4 +367,21 @@ input:focus{
 
 .footer-2{
   margin-bottom: var(--size-40);
+}
+
+.footer-1 ul li a{
+  transition: all .3s ease-in-out;
+}
+
+.footer-1 ul li a:hover{
+  color: var(--btn-color);
+}
+
+/* social-media-navigation */
+.social-media-bar.vert, .social-media-bar.horz{
+  visibility:hidden;
+}
+
+.social-media-bar.vert.active, .social-media-bar.horz.active{
+  visibility: visible;
 }
